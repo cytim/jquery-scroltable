@@ -7,4 +7,11 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" />
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+  <link rel="stylesheet" href="{{ "/css/syntax-tango.css" | prepend: site.baseurl }}" />
+
+  <script src="{{ "/scripts/jquery-3.0.0.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/scripts/jquery.sticky.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/scripts/common.js" | prepend: site.baseurl }}"></script>
 </head>
