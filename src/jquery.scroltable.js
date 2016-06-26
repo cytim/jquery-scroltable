@@ -1,14 +1,16 @@
 /**
- * jQuery ScrolTable v1.0.0
+ * jQuery ScrolTable v1.0.1
  * https://github.com/cytim/jquery-scroltable
  *
  * Copyright 2016 Tim Wong
  * Released under the MIT license
  *
- * Date: 2016-06-06
+ * Date: 2016-06-21
  */
 
 (function(win, $) {
+  'use strict';
+
   // store all the scrollable-tables
   var _scroltables;
 
