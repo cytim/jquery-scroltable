@@ -218,6 +218,25 @@ table {
 
 
 /**
+ * Miscellaneous
+ */
+.small-font {
+  color: $grey-color;
+  font-size: $small-font-size;
+}
+
+.ui-resizable-e {
+  right: 0;
+  width: 8px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #eee url(images/grip-vertical.png) no-repeat center;
+  cursor: ew-resize;
+}
+
+
+
+/**
  * Container
  */
 .container {

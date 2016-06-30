@@ -12,6 +12,7 @@ layout: default
   <nav id="home-navbar">
     <div class="container">
       <ul class="home-nav">
+        <li><a href="#demo" data-toggle="scroll">demo</a></li>
         <li><a href="#quick-start" data-toggle="scroll">quick start</a></li>
         <li><a href="#methods" data-toggle="scroll">methods</a></li>
         <li><a href="{{ site.repo }}">get it now</a></li>
@@ -21,6 +22,151 @@ layout: default
   </nav>
 
   <section class="home-content">
+    <section id="demo" class="home-section">
+      <div class="container">
+        <h2>Demo</h2>
+        <div id="demo-content">
+          <h4>OS Platform Statistics *</h4>
+          <table class="demo-table">
+            <tbody>
+              <tr>
+                <th>2016</th>
+                <th>Win10</th>
+                <th>Win8</th>
+                <th>Win7</th>
+                <th>Vista</th>
+                <th>NT</th>
+                <th>WinXP</th>
+                <th>Linux</th>
+                <th>Mac</th>
+                <th>Chrome OS</th>
+                <th>Mobile</th>
+              </tr>
+              <tr>
+                <td>May</td>
+                <td>22.6%</td>
+                <td>13.6%</td>
+                <td>40.7%</td>
+                <td>0.3%</td>
+                <td>0.1%</td>
+                <td>1.6%</td>
+                <td>5.6%</td>
+                <td>10.2%</td>
+                <td>0.2%</td>
+                <td>5.2%</td>
+              </tr>
+              <tr>
+                <td>April</td>
+                <td>21.2%</td>
+                <td>14.1%</td>
+                <td>41.2%</td>
+                <td>0.4%</td>
+                <td>0.1%</td>
+                <td>1.7%</td>
+                <td>5.5%</td>
+                <td>10.6%</td>
+                <td>0.2%</td>
+                <td>5.1%</td>
+              </tr>
+              <tr>
+                <td>March</td>
+                <td>19.5%</td>
+                <td>14.7%</td>
+                <td>42.4%</td>
+                <td>0.4%</td>
+                <td>0.1%</td>
+                <td>1.9%</td>
+                <td>5.5%</td>
+                <td>10.3%</td>
+                <td>0.2%</td>
+                <td>5.1%</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>17.8%</td>
+                <td>15.2%</td>
+                <td>43.1%</td>
+                <td>0.4%</td>
+                <td>0.1%</td>
+                <td>2.1%</td>
+                <td>5.6%</td>
+                <td>10.4%</td>
+                <td>0.2%</td>
+                <td>5.2%</td>
+              </tr>
+              <tr>
+                <td>January</td>
+                <td>17.0%</td>
+                <td>15.8%</td>
+                <td>43.2%</td>
+                <td>0.4%</td>
+                <td>0.1%</td>
+                <td>2.2%</td>
+                <td>5.7%</td>
+                <td>10.2%</td>
+                <td>0.2%</td>
+                <td>5.4%</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Mobile Devices Statistics *</h4>
+          <table class="demo-table">
+            <tbody>
+              <tr>
+                <th>2016</th>
+                <th>Total</th>
+                <th>iOS</th>
+                <th>Android</th>
+                <th>Windows</th>
+                <th>Others</th>
+              </tr>
+              <tr>
+                <td>May</td>
+                <td>5.20 %</td>
+                <td>1.38 %</td>
+                <td>3.40 %</td>
+                <td>0.29 %</td>
+                <td>0.13 %</td>
+              </tr>
+              <tr>
+                <td>April</td>
+                <td>5.12 %</td>
+                <td>1.22 %</td>
+                <td>3.36 %</td>
+                <td>0.40 %</td>
+                <td>0.14 %</td>
+              </tr>
+              <tr>
+                <td>March</td>
+                <td>5.13 %</td>
+                <td>1.24 %</td>
+                <td>3.41 %</td>
+                <td>0.38 %</td>
+                <td>0.10 %</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>5.15 %</td>
+                <td>1.08 %</td>
+                <td>3.49 %</td>
+                <td>0.42 %</td>
+                <td>0.16 %</td>
+              </tr>
+              <tr>
+                <td>January</td>
+                <td>5.38 %</td>
+                <td>1.17 %</td>
+                <td>3.69 %</td>
+                <td>0.37 %</td>
+                <td>0.15 %</td>
+              </tr>
+            </tbody>
+          </table>
+          <span class="small-font">* Statistics are provided by <a href="http://www.w3schools.com/browsers/default.asp" target="_blank">w3schools.com</a></span>
+        </div>
+      </div>
+    </section>
+
     <section id="quick-start" class="home-section">
       <div class="container">
         <h2>Quick Start</h2>
@@ -97,5 +243,9 @@ $('#sample-table').scroltable('destroy');
 </div>
 
 <script>
-  $('#home-navbar').sticky();
+  $('#home-navbar').sticky({ zIndex: 9999 });
+
+  $('#demo-content').resizable({ handles: 'e' });
+
+  $('#demo-content > table').scroltable();
 </script>

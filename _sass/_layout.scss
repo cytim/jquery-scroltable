@@ -46,6 +46,27 @@
   padding: $spacing-unit/2 0;
 }
 
+.home-section#demo #demo-content {
+  max-width: 100%;
+  padding: 15px 20px 15px 15px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 0 #dcdcdc inset;
+  border-radius: 5px;
+
+  .scroltable-wrapper {
+    margin-bottom: $spacing-unit/2;
+  }
+
+  .demo-table {
+    margin: 0;
+
+    th, td {
+      min-width: 100px;
+      text-align: center;
+    }
+  }
+}
+
 .home-section#methods .method-table {
   width: 100%;
 
