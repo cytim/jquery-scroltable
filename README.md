@@ -1,4 +1,4 @@
-# ScrolTable v1.0.1
+# ScrolTable v1.0.2
 
 > A lightweight jQuery plugin to create scrollable tables for better mobile experience.
 
