@@ -1,10 +1,18 @@
 {
   "name": "jquery-scroltable",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A lightweight jQuery plugin to create scrollable tables for better mobile experience.",
   "main": "src/jquery.scroltable.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "gruntify-eslint": "^2.0.0"
   },
   "repository": {
     "type": "git",
@@ -17,10 +25,15 @@
     "table",
     "scroll"
   ],
-  "author": "Tim Wong",
+  "author": {
+    "name": "Tim Wong"
+  },
+  "contributors": {
+    "name": "Alex Poon"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cytim/jquery-scroltable/issues"
   },
-  "homepage": "https://github.com/cytim/jquery-scroltable#readme"
+  "homepage": "https://cytim.github.io/jquery-scroltable/"
 }
