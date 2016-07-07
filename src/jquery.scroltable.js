@@ -1,11 +1,11 @@
 /**
- * jQuery ScrolTable v1.0.1
+ * jQuery ScrolTable v1.0.2
  * https://github.com/cytim/jquery-scroltable
  *
  * Copyright 2016 Tim Wong
  * Released under the MIT license
  *
- * Date: 2016-06-21
+ * Date: 2016-07-01
  */
 
 (function(win, $) {
@@ -103,7 +103,7 @@
     destroy.call(this);
 
     var wrapper     = $('<div class="scroltable-wrapper"></div>');
-    var nav         = $('<div class="scroltable-nav scroltable-nav-left"></div><div class="scroltable-nav scroltable-nav-right"></div>');
+    var nav         = $('<div class="scroltable-nav scroltable-nav-left"><div class="scroltable-nav-arrow scroltable-nav-arrow-left"></div></div><div class="scroltable-nav scroltable-nav-right"><div class="scroltable-nav-arrow scroltable-nav-arrow-right"></div></div>');
     var content     = $('<div class="scroltable-container"></div>');
     var scroltables = this.addClass('scroltable').wrap(wrapper).before(nav).wrap(content);
     _scroltables = _scroltables ? _scroltables.add(scroltables) : scroltables;
