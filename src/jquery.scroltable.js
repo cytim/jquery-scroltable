@@ -1,11 +1,11 @@
 /**
  * jQuery ScrolTable v1.0.2
- * https://github.com/cytim/jquery-scroltable
+ * https://github.com/rickhurkens/jquery-scroltable
  *
  * Copyright 2016 Tim Wong
  * Released under the MIT license
  *
- * Date: 2016-07-01
+ * Date: 2023-05-15
  */
 
 (function(win, $) {
