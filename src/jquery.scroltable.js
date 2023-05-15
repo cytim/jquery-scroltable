@@ -20,19 +20,20 @@
    */
   function toggleNav() {
     var scroltable = $(this);
+    var scroltableWidth = scroltable.outerWidth().floor();
     var wrapper    = scroltable.closest('.scroltable-wrapper');
     var navLeft    = wrapper.children('.scroltable-nav-left');
     var navRight   = wrapper.children('.scroltable-nav-right');
     var container  = wrapper.children('.scroltable-container');
     var offset     = container.scrollLeft();
-    if (container.width() < scroltable.outerWidth(true)) {
+    if (container.width() < scroltableWidth) {
       // Left Navigation
       if (offset > 0)
         navLeft.finish().fadeIn();
       else
         navLeft.finish().fadeOut();
       // Right Navigation
-      if (scroltable.outerWidth(true) - container.width() > offset) {
+      if (scroltableWidth - container.width() > offset) {
         navRight.finish().fadeIn();
       } else
         navRight.finish().fadeOut();
