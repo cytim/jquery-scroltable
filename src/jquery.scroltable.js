@@ -20,7 +20,7 @@
    */
   function toggleNav() {
     var scroltable = $(this);
-    var scroltableWidth = scroltable.outerWidth().floor();
+    var scroltableWidth = Math.floor(scroltable.outerWidth());
     var wrapper    = scroltable.closest('.scroltable-wrapper');
     var navLeft    = wrapper.children('.scroltable-nav-left');
     var navRight   = wrapper.children('.scroltable-nav-right');
