@@ -1,11 +1,11 @@
 /**
  * jQuery ScrolTable v1.0.2
- * https://github.com/cytim/jquery-scroltable
+ * https://github.com/rickhurkens/jquery-scroltable
  *
  * Copyright 2016 Tim Wong
  * Released under the MIT license
  *
- * Date: 2016-07-01
+ * Date: 2023-05-15
  */
 
 (function(win, $) {
@@ -20,19 +20,20 @@
    */
   function toggleNav() {
     var scroltable = $(this);
+    var scroltableWidth = Math.floor(scroltable.outerWidth());
     var wrapper    = scroltable.closest('.scroltable-wrapper');
     var navLeft    = wrapper.children('.scroltable-nav-left');
     var navRight   = wrapper.children('.scroltable-nav-right');
     var container  = wrapper.children('.scroltable-container');
     var offset     = container.scrollLeft();
-    if (container.width() < scroltable.outerWidth(true)) {
+    if (container.width() < scroltableWidth) {
       // Left Navigation
       if (offset > 0)
         navLeft.finish().fadeIn();
       else
         navLeft.finish().fadeOut();
       // Right Navigation
-      if (scroltable.outerWidth(true) - container.width() > offset) {
+      if (scroltableWidth - container.width() > offset) {
         navRight.finish().fadeIn();
       } else
         navRight.finish().fadeOut();
